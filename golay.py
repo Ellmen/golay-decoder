@@ -98,8 +98,9 @@ if __name__ == '__main__':
     r1 = [0,0,0,0, 0,0,0,0, 0,0,1,1, 1,1,1,1, 1,1,0,1, 1,0,0,1]
     r2 = [0,0,1,1, 1,0,0,0, 0,0,0,0, 0,1,0,0, 1,1,0,0, 1,1,1,0]
     r3 = [1,1,1,1, 0,0,0,0, 0,0,0,0, 0,0,1,1, 1,0,1,0, 0,1,1,1]
-    # golay = make_G()
-    # s1 = multiply(make_G(), r1)
-    print decode(r1)
-    print decode(r2)
-    print decode(r3)
+    r4 = [1,1,1,1, 1,1,1,1, 1,1,1,1, 1,1,1,1, 1,0,0,0, 1,1,1,0]
+    for _ in range(1000):
+        print decode(r1)
+        print decode(r2)
+        print decode(r3)
+        print decode(r4)
